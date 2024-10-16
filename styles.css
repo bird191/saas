@@ -1,0 +1,103 @@
+body{
+  margin-right: 10%;
+  margin-left: 10%;
+  background-image: url(/saas-project-assets/backgrounds/background-top.svg);
+  background-repeat: no-repeat;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.top,.top-left,.top-right, .righthand{
+  display: flex;
+  width: 100%;
+}
+.head{
+  display: flex;
+  width: 100%;
+}
+.lefthand{
+  width: 100%;
+  margin-top: 20px;
+}
+.lefthand img{
+  width: 30%;
+}
+.top-right,.righthand{
+  gap:10px;
+  justify-content: right;
+}
+.righthand :nth-child(1){
+  color: blue;
+}
+.righthand :nth-child(6),.freedom :nth-child(3){
+  background-color:cornflowerblue;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+}
+.righthand{
+  align-items: center;
+  margin-top: 20px;
+}
+.freedom{
+  width: 30%;
+}
+.logos{
+  display: flex;
+}
+.logos div{
+  width: 10%; 
+  padding:1%;
+  background-color: white;
+  border-radius: 100%;
+  position: relative;
+  left:50%;
+  box-shadow: 10px;
+  text-align: center;
+}
+.logos img{
+  width: 50%;
+}
+.logos :nth-child(1){
+  bottom:200px;
+}
+.logos :nth-child(2){
+  bottom:70px;
+  left:40%;
+}
+.logos :nth-child(3){
+  bottom:10px;
+  left:40%;
+}
+.logos :nth-child(4){
+  bottom:170px;
+  left:35%;
+}
+.logos :nth-child(5){
+  bottom:70px;
+  left:30%;
+}
+.logos :nth-child(6){
+  bottom: 200px;
+  left:30%;
+}
+.logos :nth-child(7){
+  bottom:-10px;
+  left:20%
+}
+.heading{
+  text-align: center;
+}
+.cards{
+  display: flex;
+  gap: 30px;
+}
+.card{
+  background-color: white;
+  box-shadow: 10px black;
+  width: 50%;
+}
+.card img{
+  width: 50%;
+}
