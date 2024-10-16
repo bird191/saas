@@ -30,7 +30,7 @@ a{
 .righthand :nth-child(1){
   color: blue;
 }
-.righthand :nth-child(6),.freedom :nth-child(3){
+.righthand :nth-child(6),.freedom :nth-child(3),.learn a{
   background-color:cornflowerblue;
   padding: 10px;
   border-radius: 20px;
@@ -100,4 +100,7 @@ a{
 }
 .card img{
   width: 50%;
+}
+.learn{
+  background-color: lightblue;
 }
