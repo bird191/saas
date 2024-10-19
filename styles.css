@@ -104,3 +104,20 @@ a{
 .learn{
   background-color: lightblue;
 }
+.footer-one{
+  gap:20px
+}
+.footer-one, .company, .Features, .documentation, .resources, .info{
+  display: flex;
+}
+.company, .Features, .documentation, .resources, .info{
+  flex-direction: column;
+}
+.footer2-right{
+  text-align: right;
+  position: relative;
+  bottom: 18px;
+}
+.footer2-bottom{
+  text-align: center;
+}
