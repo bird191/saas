@@ -3,6 +3,8 @@ body{
   margin-left: 10%;
   background-image: url(/saas-project-assets/backgrounds/background-top.svg);
   background-repeat: no-repeat;
+  background-size:100% 10.5%;
+  background-color:aliceblue;
 }
 a{
   text-decoration: none;
@@ -39,6 +41,7 @@ a{
 .righthand{
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 .freedom{
   width: 30%;
@@ -103,6 +106,87 @@ a{
 }
 .learn{
   background-color: lightblue;
+  display: flex;
+  width: 100%;
+  padding: 50px 10px 20px;
+}
+.left,.right{
+  width: 50%;
+}
+.right img{
+  width: 100%;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dots{
+  display:flex;
+  gap:50px;
+}
+.video img{
+  width: 100%;
+}
+.people,.hubs{
+  display: flex;
+  gap:50px;
+}
+.people img{
+  width: 30%;
+}
+.hubs{
+  flex-direction: column;
+}
+.trust{
+  display: flex;
+  width: 100%;
+}
+.trust h1{
+  text-align: center;
+}
+.trust-img{
+  width: 100%;
+}
+.trust img{
+  width: 10%;
+}
+.price-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price-body{
+  display:grid;
+  grid-template-rows:5 ;
+  grid-template-columns: 5;
+}
+.price-card{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:1 ;
+  grid-row-end:5 ;
+}
+.b1,.b2{
+  grid-row-start:1;
+  grid-row-end: 2;
+}
+.b3,.b4{
+  grid-row-start: 2;
+  grid-row-end:3 ;
+}
+.benefit{
+  width: 70%;
+}
+.benefit img{
+  width: 30%;
+}
+.hireus{
+  display: flex;
+  gap: 50px;
+}
+.i{
+  display: flex;
 }
 .footer-one{
   gap:20px
