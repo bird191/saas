@@ -3,8 +3,8 @@ body{
   margin-left: 10%;
   background-image: url(/saas-project-assets/backgrounds/background-top.svg);
   background-repeat: no-repeat;
-  background-size:100% 10.5%;
-  background-color:aliceblue;
+  background-size:100% 12.5%;
+  background-color:white;
 }
 a{
   text-decoration: none;
@@ -13,6 +13,7 @@ a{
 .top,.top-left,.top-right, .righthand{
   display: flex;
   width: 100%;
+  gap:10px;
 }
 .head{
   display: flex;
@@ -29,12 +30,12 @@ a{
   gap:10px;
   justify-content: right;
 }
-.righthand :nth-child(1){
+.righthand :nth-child(1), .freedom :nth-child(4),.card :nth-child(4){
   color: blue;
 }
-.righthand :nth-child(6),.freedom :nth-child(3),.learn a{
-  background-color:cornflowerblue;
-  padding: 10px;
+.righthand :nth-child(6),.freedom :nth-child(3),.learn a, .price-card :nth-child(6){
+  background-color:rgb(34, 109, 250);
+  padding: 10px 13px;
   border-radius: 20px;
   color: white;
 }
@@ -43,15 +44,27 @@ a{
   margin-top: 20px;
   margin-bottom: 50px;
 }
+.freedom h1{
+  font-size: 45px;
+  margin-bottom: -10px;
+}
+.freedom p{
+  margin-bottom: 40px;
+}
 .freedom{
   width: 30%;
+}
+.freedom a{
+  margin-right: 10px;
+}
+.freedom a div{
+  display: flex;
 }
 .logos{
   display: flex;
 }
 .logos div{
   width: 10%; 
-  padding:1%;
   background-color: white;
   border-radius: 100%;
   position: relative;
@@ -61,28 +74,28 @@ a{
 }
 .logos img{
   width: 50%;
+  padding: 15px;
 }
-.logos :nth-child(1){
-  bottom:200px;
+.logos :nth-child(1),.logos :nth-child(6){
+  bottom:270px;
 }
 .logos :nth-child(2){
-  bottom:70px;
+  bottom:130px;
   left:40%;
 }
 .logos :nth-child(3){
-  bottom:10px;
+  bottom:70px;
   left:40%;
 }
 .logos :nth-child(4){
-  bottom:170px;
+  bottom:220px;
   left:35%;
 }
 .logos :nth-child(5){
-  bottom:70px;
+  bottom:130px;
   left:30%;
 }
 .logos :nth-child(6){
-  bottom: 200px;
   left:30%;
 }
 .logos :nth-child(7){
@@ -95,38 +108,65 @@ a{
 .cards{
   display: flex;
   gap: 30px;
+  margin-bottom: 20px;
 }
 .card{
   background-color: white;
-  box-shadow: 10px black;
+  box-shadow:10px 10px 10px 10px rgba(240, 240, 240, 0.5);
   width: 50%;
+  border-radius: 5%;
 }
 .card img{
-  width: 50%;
+  width: 30%;
+}
+.card div{
+  display: flex;
+  margin-bottom: -17px;
+  align-items: center;
+  gap: 10px;
+}
+.card div a{
+  color: white;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 20px;
 }
 .learn{
-  background-color: lightblue;
+  background-color:aliceblue;
   display: flex;
   width: 100%;
-  padding: 50px 10px 20px;
+  padding: 50px 0px 0px 30px;
 }
-.left,.right{
-  width: 50%;
+.left{
+  width: 45%;
+}
+.right{
+  width: 70%;
 }
 .right img{
   width: 100%;
+  box-shadow:0px 0px 10px 0px rgb(197, 196, 196); ;
 }
 .header{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.why img{
+  position: relative;
+  left: 20%;
+  width: 70%;
+}
 .dots{
   display:flex;
   gap:50px;
+  margin-left: 15%;
 }
 .video img{
   width: 100%;
+}
+.people{
+  margin: 70px;
 }
 .people,.hubs{
   display: flex;
@@ -138,18 +178,32 @@ a{
 .hubs{
   flex-direction: column;
 }
+.hubs p{
+  position: relative;
+  bottom: 10%;
+}
 .trust{
   display: flex;
+  flex-direction: column;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
 }
 .trust h1{
   text-align: center;
 }
 .trust-img{
+  display: flex;
+  gap: 90px;
   width: 100%;
+  justify-content: center;
 }
 .trust img{
   width: 10%;
+}
+.price{
+  margin-top: 100px;
 }
 .price-head{
   display: flex;
@@ -158,14 +212,32 @@ a{
 }
 .price-body{
   display:grid;
+  gap: 40px;
   grid-template-rows:5 ;
   grid-template-columns: 5;
+  margin-bottom: 100px;
+  height: 0%;
 }
 .price-card{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start:1 ;
   grid-row-end:5 ;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 5px 5px 5px 5px lightgray;
+  height: 75%;
+}
+.price-h1{
+  display: flex;
+  align-items:center;
+}
+.price-h1 h1{
+  font-size: 50px;
+}
+.price-card :nth-child(6){
+  margin: 10px;
 }
 .b1,.b2{
   grid-row-start:1;
@@ -177,6 +249,7 @@ a{
 }
 .benefit{
   width: 70%;
+  padding: 10px;
 }
 .benefit img{
   width: 30%;
@@ -184,12 +257,79 @@ a{
 .hireus{
   display: flex;
   gap: 50px;
+  background-image: url(/saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg);
+  background-color: darkblue;
+  padding: 20px;
+  margin-left: -9%;
+  margin-right: -9%;
+  margin-bottom: 15%;
+}
+.hireus-left{
+  color: white;
+  margin-left: 10%;
+  width: 55%;
+  margin-top: 5%;
+  margin-right: 5%;
 }
 .i{
   display: flex;
+  width: 10%;
+  align-items: center;
+}
+.i img{
+  border-radius: 100%;
+  width: 150%;
+}
+.i :nth-child(1),.i :nth-child(3){
+  width: 100%;
+  height: 100%;
+}
+.forms{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 10%;
+}
+input, select,textarea{
+ width: 35.6%;
+ padding: 10px;
+ border-radius: 5px;
+ margin: 10px;
+}
+select{
+  width: 41%;
+  border
+}
+textarea{
+  width: 82%;
+}
+.confirm{
+  display: flex;
+  align-items: start;
+}
+.confirm input{
+  width:40px;
+  position: relative;
+  top: 10px;
+}
+.confirm p a{
+  text-decoration: underline;
+  color: blue;
+}
+.started{
+  width: 90%;
+  padding: 10px;
+  background-color: blue;
+  text-align: center;
+}
+.started a{
+  color: white;
 }
 .footer-one{
-  gap:20px
+  gap:50px
+}
+.footer-one .info img{
+  width: 50%;
 }
 .footer-one, .company, .Features, .documentation, .resources, .info{
   display: flex;
@@ -197,10 +337,32 @@ a{
 .company, .Features, .documentation, .resources, .info{
   flex-direction: column;
 }
+.company, .Features, .documentation, .resources{
+  gap: 20px;
+}
+
+.resources div{
+  display: flex;
+}
 .footer2-right{
-  text-align: right;
   position: relative;
   bottom: 18px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.footer2-right img{
+  width: 80%;
+}
+.footer2-right :nth-child(5){
+  width: 2%;
+  position: relative;
+  left: 32px;
+}
+.footer2-right select{
+  width: 14%;
+  background-color: lightgray;
+  text-align: right;
 }
 .footer2-bottom{
   text-align: center;
