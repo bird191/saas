@@ -3,7 +3,7 @@ body{
   margin-left: 10%;
   background-image: url(/saas-project-assets/backgrounds/background-top.svg);
   background-repeat: no-repeat;
-  background-size:100% 12.5%;
+  background-size:100% 9.5%;
   background-color:white;
 }
 a{
@@ -33,7 +33,7 @@ a{
 .righthand :nth-child(1), .freedom :nth-child(4),.card :nth-child(4){
   color: blue;
 }
-.righthand :nth-child(6),.freedom :nth-child(3),.learn a, .price-card :nth-child(6){
+.righthand :nth-child(6),.freedom :nth-child(3),.learn a, .price-card-bottom a{
   background-color:rgb(34, 109, 250);
   padding: 10px 13px;
   border-radius: 20px;
@@ -44,6 +44,9 @@ a{
   margin-top: 20px;
   margin-bottom: 50px;
 }
+.first-section{
+  display: flex;
+}
 .freedom h1{
   font-size: 45px;
   margin-bottom: -10px;
@@ -52,7 +55,7 @@ a{
   margin-bottom: 40px;
 }
 .freedom{
-  width: 30%;
+  width: 80%;
 }
 .freedom a{
   margin-right: 10px;
@@ -60,61 +63,56 @@ a{
 .freedom a div{
   display: flex;
 }
-.logos{
-  display: flex;
-}
 .logos div{
-  width: 10%; 
+  width: 20%; 
   background-color: white;
   border-radius: 100%;
   position: relative;
-  left:50%;
-  box-shadow: 10px;
+  left:25;
+  box-shadow: 10px 10px 10px 10px rgba(240, 240, 240, 0.5);
   text-align: center;
 }
 .logos img{
   width: 50%;
   padding: 15px;
 }
-.logos :nth-child(1),.logos :nth-child(6){
-  bottom:270px;
-}
 .logos :nth-child(2){
-  bottom:130px;
-  left:40%;
+  top:15%;
 }
 .logos :nth-child(3){
-  bottom:70px;
-  left:40%;
-}
-.logos :nth-child(4){
-  bottom:220px;
-  left:35%;
-}
-.logos :nth-child(5){
-  bottom:130px;
-  left:30%;
-}
-.logos :nth-child(6){
-  left:30%;
-}
-.logos :nth-child(7){
-  bottom:-10px;
+  top:20%;
   left:20%
 }
-.heading{
+.logos :nth-child(4){
+  left:30%;
+  bottom: 42%;
+}
+.logos :nth-child(5){
+  left:40%;
+  bottom: 27%;
+}
+.logos :nth-child(6){
+  left:70%;
+  bottom: 70%;
+}
+.logos :nth-child(7){
+  left:60%;
+  bottom: 30%;
+}
+.heading,.footer2-bottom{
   text-align: center;
 }
 .cards{
   display: flex;
   gap: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 .card{
   background-color: white;
   box-shadow:10px 10px 10px 10px rgba(240, 240, 240, 0.5);
   width: 50%;
   border-radius: 5%;
+  padding-left: 10px;
 }
 .card img{
   width: 30%;
@@ -135,10 +133,10 @@ a{
   background-color:aliceblue;
   display: flex;
   width: 100%;
-  padding: 50px 0px 0px 30px;
+  padding: 110px 0px 0px 30px;
 }
 .left{
-  width: 45%;
+  width: 90%;
 }
 .right{
   width: 70%;
@@ -151,6 +149,9 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 .why img{
   position: relative;
@@ -159,24 +160,30 @@ a{
 }
 .dots{
   display:flex;
-  gap:50px;
+  gap:40px;
   margin-left: 15%;
 }
 .video img{
   width: 100%;
 }
+.person{
+  width: 100%;
+}
 .people{
-  margin: 70px;
+  margin: px;
+  flex-direction: row;
 }
 .people,.hubs{
   display: flex;
-  gap:50px;
+  gap:30px;
 }
-.people img{
-  width: 30%;
+.person img{
+  width: 80%;
+  height: 90%
 }
 .hubs{
   flex-direction: column;
+  width: 70%;
 }
 .hubs p{
   position: relative;
@@ -298,7 +305,6 @@ input, select,textarea{
 }
 select{
   width: 41%;
-  border
 }
 textarea{
   width: 82%;
@@ -331,7 +337,7 @@ textarea{
 .footer-one .info img{
   width: 50%;
 }
-.footer-one, .company, .Features, .documentation, .resources, .info{
+.footer-one, .company, .Features, .documentation, .resources, .info,.resources div{
   display: flex;
 }
 .company, .Features, .documentation, .resources, .info{
@@ -340,10 +346,6 @@ textarea{
 .company, .Features, .documentation, .resources{
   gap: 20px;
 }
-
-.resources div{
-  display: flex;
-}
 .footer2-right{
   position: relative;
   bottom: 18px;
@@ -351,19 +353,150 @@ textarea{
   justify-content: right;
   align-items: center;
 }
-.footer2-right img{
+.footer2-social{
+  display: flex;
+}
+.flag img{
   width: 80%;
 }
-.footer2-right :nth-child(5){
-  width: 2%;
+.flag{
   position: relative;
-  left: 32px;
+  left: 35px;
 }
 .footer2-right select{
-  width: 14%;
+  width: 95%;
   background-color: lightgray;
   text-align: right;
 }
-.footer2-bottom{
-  text-align: center;
+@media (max-width:767px){
+  body{
+    background-size: 100% 5.5%;
+  }
+  .first-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .freedom{
+    margin-bottom:30px;
+  }
+  .logos :nth-child(2){
+    top: 72px;
+  }
+  .logos :nth-child(3){
+    top:75px;
+  }
+  .logos :nth-child(4),.logos :nth-child(5){
+    bottom:270px;
+  }
+  .logos :nth-child(6){
+    bottom: 450px;
+  }
+  .logos :nth-child(7){
+    bottom: 250px;
+  }
+  .heading{
+    margin-right: 24%;
+    margin-left: 25%;
+  }
+  .cards{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+    width: 100%;
+  }
+  .learn{
+    flex-direction: column;
+    align-items: center;
+  }
+  .left{
+    text-align: center;
+    width: 60%;
+    margin-bottom: 30px;
+    margin-top: -50px;
+  }
+  .right{
+    width: 100%;
+  }
+  .dots{
+    flex-direction: column;
+  }
+  .why img{
+    rotate: 90deg;
+    top:190px;
+    position: relative;
+    left: 10%;
+    width: 56%;
+  }
+  .dots{
+    position: relative;
+    left:30%;
+  }
+  .people,.person img{
+    flex-direction: column;
+    width: 100%;
+  }
+  .hubs{
+    margin: 0 20% 20%;
+    text-align: center;
+  }
+  .trust-img{
+    flex-direction: column;
+    align-items: center;
+  }
+  .trust-img img{
+    width: 20%;
+  }
+  .price-body{
+    display: flex;
+    flex-direction: column;
+  }
+  .price-h1, .price-card-bottom{
+    text-align: center;
+    justify-content: center;
+  }
+  .hireus{
+    flex-direction: column;
+  }
+  .hireus-left{
+    text-align: center;
+    margin-left: 20%;
+  }
+  .i{
+    justify-content: center;
+    margin-left:40%;
+    gap:30px
+  }
+  .forms{
+    justify-content: center;
+    width: 95%;
+  }
+  .forms input,.forms textarea{
+    width: 90%;
+  }
+  .forms select{
+    width: 94%;
+  }
+  .confirm input{
+    width: 8%;
+  }
+  .footer-one,.info, .company,.Features,.documentation,.resources{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer2-right{
+    flex-direction: column;
+  }
+  .footer2-left,.footer2-right{
+    text-align: center;
+    justify-content: center;
+  }
+  .footer2-social{
+    margin-top: 40px;
+    gap:20px
+  }
+  .flag{
+    top:40px;
+    left:-50px;
+  } 
 }
