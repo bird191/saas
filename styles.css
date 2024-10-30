@@ -23,16 +23,12 @@ a{
   width: 100%;
   margin-top: 20px;
 }
-.lefthand img{
-  width: 30%;
-}
+.lefthand img{width: 30%;}
 .top-right,.righthand{
   gap:10px;
   justify-content: right;
 }
-.righthand :nth-child(1), .freedom :nth-child(4),.card :nth-child(4){
-  color: blue;
-}
+.righthand :nth-child(1), .freedom :nth-child(4),.card :nth-child(4){color: blue;}
 .righthand :nth-child(6),.freedom :nth-child(3),.learn a, .price-card-bottom a{
   background-color:rgb(34, 109, 250);
   padding: 10px 13px;
@@ -44,25 +40,16 @@ a{
   margin-top: 20px;
   margin-bottom: 50px;
 }
-.first-section{
+.first-section,.freedom a div{
   display: flex;
 }
 .freedom h1{
   font-size: 45px;
   margin-bottom: -10px;
 }
-.freedom p{
-  margin-bottom: 40px;
-}
-.freedom{
-  width: 80%;
-}
-.freedom a{
-  margin-right: 10px;
-}
-.freedom a div{
-  display: flex;
-}
+.freedom p{margin-bottom: 40px;}
+.freedom{width: 80%;}
+.freedom a{margin-right: 10px;}
 .logos div{
   width: 20%; 
   background-color: white;
@@ -70,7 +57,6 @@ a{
   position: relative;
   left:25;
   box-shadow: 10px 10px 10px 10px rgba(240, 240, 240, 0.5);
-  text-align: center;
 }
 .logos img{
   width: 50%;
@@ -99,9 +85,6 @@ a{
   left:60%;
   bottom: 30%;
 }
-.heading,.footer2-bottom{
-  text-align: center;
-}
 .cards{
   display: flex;
   gap: 30px;
@@ -114,9 +97,7 @@ a{
   border-radius: 5%;
   padding-left: 10px;
 }
-.card img{
-  width: 30%;
-}
+.card img{width: 30%;}
 .card div{
   display: flex;
   margin-bottom: -17px;
@@ -135,12 +116,8 @@ a{
   width: 100%;
   padding: 110px 0px 0px 30px;
 }
-.left{
-  width: 90%;
-}
-.right{
-  width: 70%;
-}
+.left{width: 90%;}
+.right{width: 70%;}
 .right img{
   width: 100%;
   box-shadow:0px 0px 10px 0px rgb(197, 196, 196); ;
@@ -149,7 +126,6 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   margin-left: 18%;
   margin-right: 18%;
 }
@@ -163,16 +139,8 @@ a{
   gap:40px;
   margin-left: 15%;
 }
-.video img{
-  width: 100%;
-}
-.person{
-  width: 100%;
-}
-.people{
-  margin: px;
-  flex-direction: row;
-}
+.video img,.person,.trust{width: 100%;}
+.people{flex-direction: row;}
 .people,.hubs{
   display: flex;
   gap:30px;
@@ -192,26 +160,19 @@ a{
 .trust{
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
   justify-content: center;
   margin-bottom: 120px;
 }
-.trust h1{
-  text-align: center;
-}
+.heading,.footer2-bottom,.header,.logos div,.trust h1,.started{text-align: center;}
 .trust-img{
   display: flex;
   gap: 90px;
   width: 100%;
   justify-content: center;
 }
-.trust img{
-  width: 10%;
-}
-.price{
-  margin-top: 100px;
-}
+.trust img{width: 10%;}
+.price{margin-top: 100px;}
 .price-head{
   display: flex;
   flex-direction: column;
@@ -240,12 +201,8 @@ a{
   display: flex;
   align-items:center;
 }
-.price-h1 h1{
-  font-size: 50px;
-}
-.price-card :nth-child(6){
-  margin: 10px;
-}
+.price-h1 h1{font-size: 50px;}
+.price-card :nth-child(6){margin: 10px;}
 .b1,.b2{
   grid-row-start:1;
   grid-row-end: 2;
@@ -258,9 +215,7 @@ a{
   width: 70%;
   padding: 10px;
 }
-.benefit img{
-  width: 30%;
-}
+.benefit img{width: 30%;}
 .hireus{
   display: flex;
   gap: 50px;
@@ -303,12 +258,8 @@ input, select,textarea{
  border-radius: 5px;
  margin: 10px;
 }
-select{
-  width: 41%;
-}
-textarea{
-  width: 82%;
-}
+select{width: 41%;}
+textarea{width: 82%;}
 .confirm{
   display: flex;
   align-items: start;
@@ -326,26 +277,13 @@ textarea{
   width: 90%;
   padding: 10px;
   background-color: blue;
-  text-align: center;
 }
-.started a{
-  color: white;
-}
-.footer-one{
-  gap:50px
-}
-.footer-one .info img{
-  width: 50%;
-}
-.footer-one, .company, .Features, .documentation, .resources, .info,.resources div{
-  display: flex;
-}
-.company, .Features, .documentation, .resources, .info{
-  flex-direction: column;
-}
-.company, .Features, .documentation, .resources{
-  gap: 20px;
-}
+.started a{color: white;}
+.footer-one{gap:50px}
+.footer-one .info img{width: 50%;}
+.footer-one, .company, .Features, .documentation, .resources, .info,.resources div{display: flex;}
+.company, .Features, .documentation, .resources, .info{flex-direction: column;}
+.company, .Features, .documentation, .resources{gap: 20px;}
 .footer2-right{
   position: relative;
   bottom: 18px;
@@ -353,12 +291,8 @@ textarea{
   justify-content: right;
   align-items: center;
 }
-.footer2-social{
-  display: flex;
-}
-.flag img{
-  width: 80%;
-}
+.footer2-social{display: flex;}
+.flag img{width: 80%;}
 .flag{
   position: relative;
   left: 35px;
@@ -368,43 +302,117 @@ textarea{
   background-color: lightgray;
   text-align: right;
 }
-@media (max-width:767px){
-  body{
-    background-size: 100% 5.5%;
-  }
+@media(max-width:1023px){
+  body{background-size: 100% 6.7%;}
   .first-section{
     display: flex;
     flex-direction: column;
   }
   .freedom{
     margin-bottom:30px;
+    margin-left: 10%;
   }
-  .logos :nth-child(2){
-    top: 72px;
+  .logos :nth-child(2){top: 72px;}
+  .logos :nth-child(3){top:75px;}
+  .logos :nth-child(4),.logos :nth-child(5){bottom:270px;}
+  .logos :nth-child(6){bottom: 450px;}
+  .logos :nth-child(7){bottom: 250px;}
+  .cards{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
   }
-  .logos :nth-child(3){
-    top:75px;
+  .card{width: 100%;}
+  .c3,.c4{grid-row-start: 2;}
+  .learn,.people{
+    flex-direction: column;
+    align-items: center;
   }
-  .logos :nth-child(4),.logos :nth-child(5){
-    bottom:270px;
+  .left{
+    margin-bottom: 50px;
+    margin-top: -100px;
   }
-  .logos :nth-child(6){
-    bottom: 450px;
+  .right{
+    width: 105%;
+    margin: 0;
+    position: relative;
+    left: -15px;
   }
-  .logos :nth-child(7){
-    bottom: 250px;
+  .right img{height: 30%;}
+  .freedom,.left,.person,.hubs{text-align: center;}
+  .price-body{
+    grid-template-rows: 3;
+    grid-template-columns:3;
   }
+  .price-card{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row:1; 
+    text-align: center;
+  }
+  .price-h1{
+    justify-content: center;
+  }
+  .price-card-bottom{
+    padding: 50px;
+  }
+  .b1,.b2{
+    grid-row:2
+  }
+  .b3,.b4{grid-row:3}
+  .hireus{flex-direction: column;}
+  .hireus-left{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 90%;
+    margin-left: 0;
+  }
+  .author{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .author p{
+    width: 150%;
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+  .i{width: 20%;}
+  .i:first-child,.i:last-child{height: 25%;}
+  .forms{width: 95%;}
+  .forms input{width: 43%;}
+  .forms select{width: 46.4%;}
+  .forms textarea{width:93%}
+  .confirm input{width: 3%;}
+  .footer-one{
+    display: grid;
+    grid-template-rows: 4;
+    grid-template-columns: 4;
+  }
+  .info{
+    grid-row: 1;
+    grid-column: 1 3;
+  }
+  .company,.documentation{
+    grid-column: 2;
+  }
+  .Features{
+    grid-column: 3;
+  }
+}
+@media (max-width:767px){
+  body{background-size: 100% 5.5%;}
   .heading{
     margin-right: 24%;
     margin-left: 25%;
   }
   .cards{
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .card{
-    width: 100%;
-  }
+  .card,.right{width: 100%;}
   .learn{
     flex-direction: column;
     align-items: center;
@@ -415,11 +423,10 @@ textarea{
     margin-bottom: 30px;
     margin-top: -50px;
   }
-  .right{
-    width: 100%;
-  }
   .dots{
     flex-direction: column;
+    position: relative;
+    left:30%;
   }
   .why img{
     rotate: 90deg;
@@ -427,10 +434,6 @@ textarea{
     position: relative;
     left: 10%;
     width: 56%;
-  }
-  .dots{
-    position: relative;
-    left:30%;
   }
   .people,.person img{
     flex-direction: column;
@@ -444,9 +447,7 @@ textarea{
     flex-direction: column;
     align-items: center;
   }
-  .trust-img img{
-    width: 20%;
-  }
+  .trust-img img{width: 20%;}
   .price-body{
     display: flex;
     flex-direction: column;
@@ -455,7 +456,7 @@ textarea{
     text-align: center;
     justify-content: center;
   }
-  .hireus{
+  .hireus,.footer2-right{
     flex-direction: column;
   }
   .hireus-left{
@@ -474,18 +475,11 @@ textarea{
   .forms input,.forms textarea{
     width: 90%;
   }
-  .forms select{
-    width: 94%;
-  }
-  .confirm input{
-    width: 8%;
-  }
+  .forms select{width: 94%;}
+  .confirm input{width: 8%;}
   .footer-one,.info, .company,.Features,.documentation,.resources{
     flex-direction: column;
     align-items: center;
-  }
-  .footer2-right{
-    flex-direction: column;
   }
   .footer2-left,.footer2-right{
     text-align: center;
