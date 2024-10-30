@@ -29,14 +29,19 @@
     <div class="lefthand">
       <img src="/saas-project-assets/project_logo/logo.svg" alt="">
     </div>
-    <div class="righthand">
-      <a href="">Home</a>
-      <a href="">Features</a>
-      <a href="">Learn</a>
-      <a href="">Pricing</a>
-      <a href="">Hire Us</a>
-      <a href="">Buy Now</a>
-    </div>
+    <nav>
+      <li class="righthand">
+        <ul><button aria-expanded="false" aria-controls="righthand" class="menu">
+          &#9776
+        </button></ul>
+        <ul class="linkr"><a href="">Home</a></ul>
+        <ul class="Featuresl linkr"><a href="">Features</a></ul>
+        <ul class="Learnl linkr"><a href="">Learn</a></ul>
+        <ul class="Pricing linkr"><a href="">Pricing</a></ul>
+        <ul class="hireusl linkr"><a href="">Hire Us</a></ul>
+        <ul class="buynow linkr"><a href="">Buy Now</a></ul>
+      </li>
+    </nav>
   </div>
   <div class="first-section">
     <div class="freedom">
@@ -317,4 +322,12 @@
     </div>
   </footer>
 </body>
+<script>
+  const navbutton=document.querySelector('button[aria-expanded]');
+  function togglenav({target}){
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navbutton.setAttribute('aria-expanded', !expanded);
+  }
+  navbutton.addEventListener('click',togglenav);
+</script>
 </html>

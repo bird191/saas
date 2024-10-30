@@ -6,7 +6,7 @@ body{
   background-size:100% 9.5%;
   background-color:white;
 }
-a{
+a, .righthand ul li a{
   text-decoration: none;
   color: black;
 }
@@ -28,17 +28,28 @@ a{
   gap:10px;
   justify-content: right;
 }
-.righthand :nth-child(1), .freedom :nth-child(4),.card :nth-child(4){color: blue;}
-.righthand :nth-child(6),.freedom :nth-child(3),.learn a, .price-card-bottom a{
+.freedom :nth-child(4),.card :nth-child(4){color: blue;}
+.righthand :nth-child(7),.freedom :nth-child(3),.learn a, .price-card-bottom a{
   background-color:rgb(34, 109, 250);
   padding: 10px 13px;
   border-radius: 20px;
   color: white;
 }
+.menu{
+  text-align: right;
+  display: none;
+  position: relative;
+  left:2000%;
+}
 .righthand{
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 50px;
+}
+.righthand ul{
+  display: flex;
+  gap:10px
 }
 .first-section,.freedom a div{
   display: flex;
@@ -304,6 +315,37 @@ textarea{width: 82%;}
 }
 @media(max-width:1023px){
   body{background-size: 100% 6.7%;}
+  [aria-controls="righthand"]{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:10px ;
+  }
+  [aria-expanded="true"]~ ul{
+    display: flex;
+  }
+  [aria-expanded="false"] .close{
+    display: none; 
+  }
+  [aria-expanded="true"] .close{
+    display: inline-block; 
+  }
+  [aria-expanded="true"] .open{
+    display: none; 
+  }
+  .menu{
+    display: inline-block;
+    order:-1;
+  }
+  .linkr a{
+    display: none;
+  }  
+  .menu ul{
+    max-height: 100px;
+    overflow: hidden;
+    transform: translateX(90);
+    transition: all 0.5s;
+  }
+
   .first-section{
     display: flex;
     flex-direction: column;
@@ -403,6 +445,12 @@ textarea{width: 82%;}
 }
 @media (max-width:767px){
   body{background-size: 100% 5.5%;}
+  .menu ul{
+    max-height: 0;
+    overflow: hidden;
+    transform: translateX(90);
+    transition: all 0.5s;
+  }
   .heading{
     margin-right: 24%;
     margin-left: 25%;
