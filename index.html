@@ -8,7 +8,7 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="top">
+  <div class="top" id="top">
     <div class="top-left">
       <a href=""><</a>
       <a href="">Main Demo</a>
@@ -32,14 +32,11 @@
     </div>
     <nav>
       <li class="righthand">
-        <ul><button aria-expanded="false" aria-controls="righthand" class="menu">
-          &#9776
-        </button></ul>
-        <ul class="linkr"><a href="">Home</a></ul>
-        <ul class="linkr"><a href="">Features</a></ul>
-        <ul class="linkr"><a href="">Learn</a></ul>
-        <ul class="linkr"><a href="">Pricing</a></ul>
-        <ul class="linkr"><a href="">Hire Us</a></ul>
+        <ul class="linkr"><a href="#top">Home</a></ul>
+        <ul class="linkr"><a href="#features">Features</a></ul>
+        <ul class="linkr"><a href="#learn">Learn</a></ul>
+        <ul class="linkr"><a href="#price">Pricing</a></ul>
+        <ul class="linkr"><a href="#hireus">Hire Us</a></ul>
         <ul class="linkr buynow"><a href="">Buy Now</a></ul>
       </li>
     </nav>
@@ -66,7 +63,7 @@
     </div>
   </div>
 </div>
-  <div class="features">
+  <div class="features" id="features">
     <div class="heading">
     <h1>Key benefits</h1>
     <p>Design faster with a growing array  of beautiful templates</p>
@@ -103,7 +100,7 @@
       </div>
     </div>
   </div>
-  <div class="learn">
+  <div class="learn"id="learn">
     <div class="left">
       <h1>Front makes you look at things from a different perspectives</h1>
         <a href="">Get Started  ></a>
@@ -154,7 +151,7 @@
     </div>
   </div>
   <hr>
-  <div class="price">
+  <div class="price" id="price">
     <div class="price-head">
       <h1>Pricing</h1>
       <p>No additional costs. Pay for what you use</p>
@@ -199,7 +196,7 @@
       </div>
     </div>
   </div>
-  <div class="hireus">
+  <div class="hireus" id="hireus">
     <div class="hireus-left">
       <div class="hireus-quote">
         <h1>Hire Us</h1>
@@ -323,12 +320,4 @@
     </div>
   </footer>
 </body>
-<script>
-  const navbutton=document.querySelector('button[aria-expanded]');
-  function togglenav({target}){
-    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
-    navbutton.setAttribute('aria-expanded', !expanded);
-  }
-  navbutton.addEventListener('click',togglenav);
-</script>
 </html>

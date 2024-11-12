@@ -2,43 +2,16 @@
   body {
     background-size: 100% 6.7%;
   }
-  [aria-controls="righthand"] {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+  .lefthand img{
+    width:60%
   }
-  [aria-expanded="true"] ~ ul {
-    display: flex;
-  }
-  [aria-expanded="false"] .close {
-    display: none;
-  }
-  [aria-expanded="true"] .close {
-    display: inline-block;
-  }
-  [aria-expanded="true"] .open {
-    display: none;
-  }
-  .menu {
-    display: inline-block;
-    order: -1;
-  }
-  .buynow ul{
-    display: none;
-  }
-  .linkr a{
-    display: none;
-  }
-  .menu ul {
-    max-height: 100px;
-    overflow: hidden;
-    transform: translateX(90);
-    transition: all 0.5s;
-  }
-
   .first-section {
     display: flex;
     flex-direction: column;
+  }
+  .righthand{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
   }
   .freedom {
     margin-bottom: 30px;
@@ -89,6 +62,9 @@
   }
   .right img {
     height: 30%;
+  }
+  .why img{
+    left:18%
   }
   .freedom,
   .left,
@@ -152,7 +128,7 @@
     height: 25%;
   }
   .forms {
-    width: 95%;
+    width: 96%;
   }
   .forms input {
     width: 43%;
@@ -183,18 +159,15 @@
     grid-column: 3;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body {
     background-size: 100% 5.5%;
   }
+  .lefthand img{
+    width: 70%;
+  }
   .logos{
     margin-top: 150px;
-  }
-  .menu ul {
-    max-height: 0;
-    overflow: hidden;
-    transform: translateX(90);
-    transition: all 0.5s;
   }
   .heading {
     margin-right: 24%;
@@ -228,8 +201,8 @@
     rotate: 90deg;
     top: 190px;
     position: relative;
-    left: 10%;
-    width: 56%;
+    left: 15%;
+    width: 53%;
   }
   .people,
   .person img {

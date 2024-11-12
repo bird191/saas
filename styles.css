@@ -51,8 +51,6 @@ a,
 .menu {
   text-align: right;
   display: none;
-  position: relative;
-  left: 300px;
 }
 .righthand {
   align-items: center;
